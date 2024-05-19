@@ -1,0 +1,66 @@
+.btn-group {
+  gap: 10px;
+}
+
+.card {
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+}
+
+.card-has-background {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card-has-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.card-has-background:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px -2px rgba(0,0,0,0.3);
+  background-size: 130%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-div-cont {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  background-image: linear-gradient(-135deg, rgba(126,202,156,0.9) 0%, rgba(204,255,189, 0.9));
+}
+
+.asientos {
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-direction: column;
+}
+
+.col.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
